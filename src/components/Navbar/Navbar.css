@@ -1,0 +1,71 @@
+/* בסיסי */
+.navbar {
+    background-color: #2d3748;
+    padding: 1rem;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar-icon {
+    margin-right: 0.5rem;
+  }
+  
+  /* תצוגה עבור מובייל */
+  .navbar-toggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  .navbar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    display: none;
+  }
+  
+  .navbar-search {
+    width: 100%;
+    padding: 0.5rem;
+  }
+  
+  /* תצוגה עבור דסקטופ */
+  @media (min-width: 768px) {
+    .navbar-toggle {
+      display: none;
+    }
+  
+    .navbar-menu {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .navbar-search {
+      width: auto;
+      padding: 0;
+    }
+  }
+  
+  /* פתיחת תפריט במובייל */
+  .navbar.open .navbar-menu {
+    display: flex;
+  }
+  

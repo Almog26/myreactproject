@@ -1,0 +1,29 @@
+.input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    label {
+        padding: 8px;
+        font-size: 1.5rem;
+        color: red;
+        font-family: cursive;
+    }
+
+    input {
+        padding: 8px;
+
+        //input::placeholder - ניתן לכתוב גם ככה ע"מ ..לעצב את הטקסט שמופיע בתוך האינפוט
+        &::placeholder {
+            color: aquamarine;
+            font-style: italic;
+            font-weight: bold;
+            font-size: 1rem;
+
+        }
+
+        border: 3px solid aquamarine;
+        border-radius: 8px;
+        width: 25%;
+    }
+}
